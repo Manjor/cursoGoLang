@@ -4,18 +4,18 @@ import "fmt"
 
 func notaPraConceito(nota float64) string {
 
-	if nota >= 9 && nota <= 10 {
+	switch {
+	case nota >= 9 && nota <= 10:
 		return "A"
-	} else if nota >= 8 && nota < 9 {
+	case nota >= 8 && nota < 9:
 		return "B"
-	} else if nota >= 5 && nota < 8 {
+	case nota >= 5 && nota < 8:
 		return "C"
-	} else if nota >= 3 && nota < 5 {
+	case nota >= 3 && nota < 5:
 		return "D"
-	} else {
+	default:
 		return "E"
 	}
-
 }
 
 func main() {
