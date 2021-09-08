@@ -24,4 +24,6 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
+
+	// Uma solução é usar inteiros sem sinais
 }
